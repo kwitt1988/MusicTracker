@@ -48,7 +48,7 @@ class Spotify extends React.Component{
             method: 'GET',
             redirect: 'follow'
         };
-        const url = "http://localhost:8888/spotify/refresh_token?" + this.state.refreshToken;
+        const url = "http://164.90.182.47:8888/spotify/refresh_token?" + this.state.refreshToken;
         await fetch(url, requestOptions)
             .then(res => res.json())
             .then(

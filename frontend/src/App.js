@@ -38,7 +38,7 @@ function Home() {
   return (
       <div>
         <div id="enDiv">
-          <h2><a href="http://localhost:8888/spotify/login">Login to Spotify</a> </h2>
+          <h2><a href="http://164.90.182.47:8888/spotify/login">Login to Spotify</a> </h2>
         </div>
       </div>
   );

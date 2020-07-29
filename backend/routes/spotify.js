@@ -9,8 +9,8 @@ var querystring = require('querystring');
 
 var client_id = '0f0031d39bfc45ce9bb0515cabe7c902'; // Your client id
 var client_secret = '58cb416909c5493ea6db0437b3f85672'; // Your secret
-var redirect_uri = 'http://localhost:8888/spotify/callback'; // Your redirect uri
-var redirect_react = 'http://localhost:3000/loggedin/#';
+var redirect_uri = 'http://164.90.182.47:8888/spotify/callback'; // Your redirect uri
+var redirect_react = 'http://164.90.182.47:3000/loggedin/#';
 var stateKey = 'spotify_auth_state';
 
 var generateRandomString = function(length) {
