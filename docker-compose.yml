@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  musictracker-frontend:
+    build: ./frontend
+    ports:
+    - 3000:3000
+  musictracker-backend:
+    build: ./backend
+    ports:
+    - 8888:8888

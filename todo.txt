@@ -1,0 +1,24 @@
+localStorage.setItem('access_token', access_token)
+localStorage.setItem('refresh_token', refresh_token)
+const access_token = localStorage.getItem('access_token')
+const refresh_token = localStorage.getItem('refresh_token')
+
+Om både frontend och backend behöver databas behöver dessa köras separat. Tills vidare lägger jag en psql-databas i backenden. 
+Onekligen blir det ganska icke intuitivt att lägga installationen av denna i samma dockerfile som backend-containern.
+
+BACKEND
+1. klona repon
+1.1 Navigera till foldern där dockerfilen ligger
+2. kör 
+	docker build --no-cache --force-rm --tag musictracker-backend:0.1 .
+	docker run --publish 8888:8888 --detach --name MusicTracker musictracker:0.1
+3. man har nu backenden körandes lokalt på port 8888.
+
+FRONTEND
+1. klona repon
+1.1 Navigera till foldern där dockerfilen ligger
+2. kör 
+	docker build --no-cache --force-rm --tag musictracker-frontend:0.1 .
+	docker run -i --publish 3000:3000 --detach --name MusicTracker-Frontend musictracker-frontend:0.1
+
+If you change a service’s Dockerfile or the contents of its build directory, run docker-compose build to rebuild it.
