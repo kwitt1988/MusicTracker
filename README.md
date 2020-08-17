@@ -1,7 +1,7 @@
 # MusicTracker
 An application which aims at creating curated content for the user.
 
-Right now the user is able to log-in through Spotify and get ones access-tokens. 
+Right now the user is able to log-in through Spotify and get ones API-tokens. 
 
 With these tokens one can make API-request for example with the help of Postman.
 
